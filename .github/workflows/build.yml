@@ -22,7 +22,7 @@ jobs:
       if: runner.os == 'Linux'
       with:
         key: ${{ matrix.os }}-${{ matrix.enable_ui }}
-    - uses: meanmiddleditch/get-ninja@master
+    - uses: seanmiddleditch/gha-setup-ninja@master
     - uses: ilammy/msvc-dev-cmd@v1
       if: runner.os == 'Windows'
     - name: Workaround for windows-2022 and cmake 3.25.0
